@@ -15,11 +15,6 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Deliberate Failure') {
-            steps {
-                sh 'exit 1'
-            }
-        }
         
         stage('Build') {
             steps {
